@@ -1,0 +1,235 @@
+/* General form styling */
+.container {
+font-family: Arial, sans-serif;
+background-color: white;
+padding: 10px;
+margin: 10px;
+border-radius: 10px;
+max-width: 800px; /* Wider maximum width for desktop */
+box-sizing: border-box;
+overflow:hidden;
+}
+.required-star {
+    color: red;
+    
+}
+
+
+label {
+    font-size: 12px;
+}
+
+.form-control {
+    font-size: 12px;
+    padding: 5px;
+    max-width: 600px;
+}
+
+.container-1 button {
+    background-color: #0078b7;
+  
+    color: white;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    height: 30px; /* Set your desired height */
+    line-height: 30px;
+
+    
+}
+.salary-input {
+    max-width: 200px; /* Adjust this value as needed */
+}
+   .button-container {
+display: flex;
+gap: 10px; /* Adjust spacing between buttons */
+justify-content: flex-start; /* Align buttons to the left */
+margin-top: 10px;
+}
+
+ /* Salary input fields */
+.salary-input {
+font-size: 12px;
+padding: 5px;
+width: 100%; /* Default for larger screens */
+max-width: 280px; /* Maximum width for desktop */
+box-sizing: border-box;
+}
+
+
+
+.container-1 button:hover {
+   
+
+    color: white;
+}
+
+.btn-cancel {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-cancel:hover {
+   
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.input-group .form-control {
+    max-width: 50%;
+}
+
+.auto-style2 {
+    /* width: 966px;
+    height: 800px;
+    position: absolute;
+    top: -3px;
+    left: 1px;
+    z-index: 1; */
+}
+
+
+.auto-style6 {
+    font-size: x-large;
+    /* top: 17px; */
+    /* position: absolute; */
+    /* left: 15px; */
+    /* z-index: 1; */
+}
+
+
+.auto-style8 {
+    position: relative;
+    width: 99%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    left: 0px;
+    top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.salary-range {
+display: flex;
+flex-wrap: nowrap; /* Prevents wrapping */
+gap: 5px; /* Adds space between the fields */
+}
+
+.salary-input {
+width: 30%; /* Each input takes half the container width */
+max-width: none; /* Removes maximum width restriction */
+}
+
+
+/* Media query for mobile view adjustments */
+@media (max-width: 600px) {
+.container {
+max-width: 50%;
+padding: 5px;
+}
+
+.form-control {
+padding: 5px;
+max-width: 200%;
+}
+.button-container {
+display: flex;
+gap: 10px; /* Adds space between the buttons */
+justify-content: flex-end; /* Aligns buttons to the right */
+}
+
+
+label {
+font-size: 11px; /* Slightly smaller font size */
+}
+#btnSubmit0 {
+position: relative; /* Change to relative to align based on content flow */
+left: auto; /* Reset left value */
+margin-left: -400px; /* Add some margin to the left */
+margin-top: -4px; /* Optional, adjust spacing from top */
+width: 100%; /* Ensure button spans full width on mobile if needed */
+max-width: 300px; /* Set a maximum width for smaller devices */
+}
+.button-container {
+justify-content: center; /* Centers buttons on mobile screens */
+width: 100%; /* Ensures buttons span the full width */
+}
+
+.button-container .btn {
+width: 45%; /* Adjust button width if necessary */
+}
+@media (max-width: 768px) {
+.salary-range {
+display: flex;
+flex-wrap: nowrap;
+max-width:80%;
+}
+
+.salary-input {
+width: 40%; /* Set to full width to make it responsive */
+max-width: none; /* Set a max width to control the size on mobile */
+flex: 1; /* Flex-grow to fill available space */
+}
+
+.input-group .form-control {
+max-width: 500px;
+}
+
+.manage-jobs-btn {
+background-color: #0078B7;
+color: white;
+border: none;
+z-index: 1;
+position: absolute;
+top: -80px;
+right: -200px;
+height: 38px;
+width: 133px;
+}
+}
+
+
+}
+.manage-jobs-btn {
+background-color: #0078B7;
+color: white;
+border: none;
+z-index: 1;
+position: absolute;
+top: 18px;
+left: 680px; /* Move the button beyond the left edge of its container */
+height: 38px;
+width: 133px;
+}
+
+/* General mobile styles */
+@media only screen and (max-width: 600px) {
+body, html {
+overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Optional: Stack elements vertically if necessary */
+.form-group {
+display: block;
+width: 100%; /* Make form groups full width on mobile */
+}
+
+input, select, button {
+width: 100%; /* Ensures inputs, selects, and buttons don't overflow */
+}
+}
+
+
+
+
+
